@@ -86,11 +86,3 @@ elif selected_activity == "Выбрать" or selected_type == "Выбрать" 
 else:
     st.write("По вашему запросу ничего не найдено.")
 
-
-        # Выводим таблицу
-        st.write("Список услуг:")
-        st.write(display_data.to_html(escape=False, index=False), unsafe_allow_html=True)
-elif area_activity is None or type_education == "Выбрать" or service_forms == "Выбрать":
-    st.write("Пожалуйста, выберите значения для всех фильтров.")
-else:
-    st.write("По вашему запросу ничего не найдено.")
