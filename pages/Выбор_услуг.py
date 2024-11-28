@@ -17,7 +17,7 @@ unique_activity = ["Выбрать"] + [
 selected_activity = st.selectbox(
     'Вид профессиональной деятельности', 
     unique_activity, 
-    index=0  # По умолчанию выбрано "Выбрать"
+    index=0
 )
 
 if selected_activity != "Выбрать":
@@ -29,7 +29,7 @@ unique_types = ["Выбрать"] + list(filtered_data['type_education'].unique(
 selected_type = st.selectbox(
     "Тип образовательной программы", 
     unique_types, 
-    index=0  # По умолчанию выбрано "Выбрать"
+    index=0
 )
 
 if selected_type != "Выбрать":
@@ -40,7 +40,7 @@ unique_forms = ["Выбрать"] + list(filtered_data['service_forms'].unique()
 selected_form = st.selectbox(
     "Форма обучения", 
     unique_forms, 
-    index=0  # По умолчанию выбрано "Выбрать"
+    index=0
 )
 
 if selected_form != "Выбрать":
